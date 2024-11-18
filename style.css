@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     box-sizing: border-box;
 }
@@ -8,44 +9,52 @@
     justify-content: center;
 }
 
+/* Navigation Bar */
 #navigation_bar {
     height: 100%;
-    background-color: rgb(71, 71, 71);
     display: flexbox;
     justify-self: center;
 }
 
-#search_box{
-    position: absolute; 
-    right: 0;
-    top: 0; 
-    height: 100%;
+/* Search Box Styles */
+#search_box {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
+#search_box label {
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Link Styles */
 a {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* unvisited link */
 a:link {
-    color: rgb(250, 248, 248);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
-/* mouse over link */
 a:hover {
-    color: rgb(2, 2, 2);
-    background-color: aliceblue;
+    background-color: rgba(218, 216, 216, 0.801);
+    border-radius: 10%;
 }
 
+/* Input Styles */
 input {
     padding: 5px;
+    width: 8em;
 }
 
+/* Layout Sections */
 #left, #center, #right {
     height: 100%;
 }
@@ -74,6 +83,8 @@ input {
 
 .header {
     display: inline-block;
+    justify-content: center; 
+    position: relative;
     height: 10vh;
     width: 100%;
     border-bottom: dotted 3px red;
@@ -96,3 +107,37 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
+/* Wrapping Images with Text */
+.float-left {
+    float: left;
+    /* margin: 0 15px 15px 0; */
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+}
+
+.float-right {
+    display: flex;
+    float: right; /* Float the image to the right */
+    margin-left: 15px; /* Optional: Adjust the space between the images */
+    width: 150px; /* Make sure the width is consistent with the first image */
+    height: auto;
+}
+
+/* Horizontal Menu Styles for Left Sidebar */
+.horizontal-menu {
+    width: 100%; /* Full width of the left sidebar */
+    margin-top: 20px; /* Optional: Adds space at the top */
+    
+}
+
+
+.horizontal-menu ul li a:hover {
+    background-color: #ddd; /* Light color when hovering */
+    color: black; /* Text color on hover */
+}
+
+.horizontal-menu ul li a:active {
+    background-color: #dbdbdb; /* Slightly darker background when clicked */
+}
+

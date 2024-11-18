@@ -2,47 +2,81 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <!-- Correct the link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>site</title>
 </head>
 <body class="centeredFlex">
 
     <div class="container border">
-        <div class="header" style="justify-content: center; position: relative;">
+        <div class="header">
             <div id="logo" style="position: absolute; left: 0;">
                 <!-- Logo can go here -->
-                <img id="logo" src="" width="60" height="60" />
+                <img id="logo" src="C:\Users\Ronen\github\frontend\MFDOOM.png" alt="MF DOOM mask"  height=50px />
             </div>
-            
+
             <div id="navigation_bar" class="centeredFlex">
-                <!-- <a href="javascript:0" target="_self">Products</a> -->
+                <a href="javascript:0" target="_self">Products</a>
                 <a href="javascript:0" target="_self">Solutions</a>
                 <a href="javascript:0" target="_self">Projects</a>
                 <a href="javascript:0" target="_self">Mission</a>
                 <a href="javascript:0" target="_self">Affiliates</a>
             </div>
-            
+
             <div id="search_box">
-            <!--  style="position: absolute; right: 0; top: 0; height: 100%;" class="centeredFlex"> -->
-                <input  type="text" placeholder="Search.." />
+                <label for="gsearch">Search: </label>
+                <form action="/action_page.php">
+                    <input type="text" placeholder="text.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </div>
-            
+
         </div>
 
         <div class="body">
             <div id="left" class="border">
                 <!-- Left Sidebar Content -->
+                <div class="horizontal-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
             <div id="center" class="border">
                 <!-- Main Content -->
+                <div class="content-left">
+                    <img src="C:\Users\Ronen\github\frontend\MFDOOM.png" alt="MF DOOM mask" class="float-left" style="width:  150px;" />
+                    <p style="font-size: large;">
+                        MF DOOM, born Daniel Dumile, was a legendary underground rapper and producer known for his complex lyrics, unique flow, and iconic metal mask. His career began in the late 1980s with KMD, but he reemerged in the late '90s with a new identity inspired by the comic villain Doctor Doom. His debut solo album, *Operation: Doomsday*, introduced his dark, imaginative style.
+
+With albums like *Madvillainy* (2004), a collaboration with producer Madlib, DOOM became a hip-hop icon, celebrated for his innovative sampling and intricate storytelling. Though he kept a low public profile, his influence on hip-hop remains profound.
+                    </p>
+                    <img src="C:\Users\Ronen\github\frontend\MFDOOM.png" alt="MF DOOM mask" class="float-right " style="width:  150px;"" />
+
+                </div>
             </div>
             <div id="right" class="border">
                 <!-- Right Sidebar Content -->
+                <div>
+                    <img  src="C:\Users\Ronen\github\frontend\MFDOOM.png" alt="MF DOOM mask"  style"height=33% " />
+                </div>
+                <div>
+                    <img  src="C:\Users\Ronen\github\frontend\MFDOOM.png" alt="MF DOOM mask"  style"height=33% " />
+                </div>
+                <div>
+                    <img  src="C:\Users\Ronen\github\frontend\MFDOOM.png" alt="MF DOOM mask" style"height=33% " />
+                </div>
             </div>
         </div>
 
         <div class="links">
             <!-- Additional links can go here -->
+            
         </div>
     </div>
 
