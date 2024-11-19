@@ -45,9 +45,14 @@ a:link {
 
 a:hover {
     background-color: rgba(218, 216, 216, 0.801);
-    border-radius: 10%;
+    border-radius: 15%;
 }
 
+.social{
+    padding: 7.5px;
+    margin-right: 10px;
+        
+}
 /* Input Styles */
 input {
     padding: 5px;
@@ -83,9 +88,6 @@ input {
     border: 2px solid black;
 }
 
-.border {
-    border: dotted 2px black;
-}
 
 .header {
     display: inline-block;
@@ -93,13 +95,11 @@ input {
     position: relative;
     height: 10vh;
     width: 100%;
-    border-bottom: dotted 3px red;
 }
 
 .links {
     height: 10vh;
     width: 100%;
-    border-top: dotted 3px blue;
 }
 
 .body {
@@ -118,15 +118,14 @@ body {
 .float-left {
     float: left;
     /* margin: 0 15px 15px 0; */
-    width: 150px; /* Adjust width as needed */
+    width: 50px; /* Adjust width as needed */
     height: auto;
 }
 
 .float-right {
-    display: flex;
-    float: right; /* Float the image to the right */
+    float: right;
     margin-left: 15px; /* Optional: Adjust the space between the images */
-    width: 150px; /* Make sure the width is consistent with the first image */
+    width: 50px; /* Make sure the width is consistent with the first image */
     height: auto;
 }
 
@@ -134,15 +133,14 @@ body {
 .horizontal-menu {
     width: 100%; /* Full width of the left sidebar */
     margin-top: 20px; /* Optional: Adds space at the top */
+
     
 }
 
 
-.horizontal-menu ul li a:hover {
-    background-color: #ddd; /* Light color when hovering */
-    color: black; /* Text color on hover */
-}
 
-.horizontal-menu ul li a:active {
-    background-color: #dbdbdb; /* Slightly darker background when clicked */
+.vmenu{
+    margin-left: 5ch;
+    padding:1.5ch;
+    color: black;
 }
