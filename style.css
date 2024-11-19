@@ -69,6 +69,12 @@ input {
 
 #right {
     width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 .container {
@@ -140,4 +146,3 @@ body {
 .horizontal-menu ul li a:active {
     background-color: #dbdbdb; /* Slightly darker background when clicked */
 }
-
